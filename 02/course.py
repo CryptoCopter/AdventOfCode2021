@@ -41,8 +41,11 @@ def aim_for_the_moon_or_something(course: List[Tuple[int, int]]) -> int:
 
 if __name__ == "__main__":
     course = load_input("input.txt")
-    print(course)
+
+    # Part 1
     destination = find_destination(course)
     print(destination)
+
+    # Part2
     real_destination = aim_for_the_moon_or_something(course)
     print(real_destination)

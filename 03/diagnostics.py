@@ -60,8 +60,11 @@ def life_support(report: List[List[int]]) -> int:
 
 if __name__ == "__main__":
     report = load_input("input.txt")
-    print(report)
+
+    # Part 1
     rates = compute_rates(report)
     print(rates)
+
+    # Part 2
     life_support_rating = life_support(report)
     print(life_support_rating)

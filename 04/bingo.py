@@ -89,9 +89,11 @@ def find_losing_score(scores: List[Tuple[int, int]]) -> int:
 
 if __name__ == "__main__":
     numbers, boards = load_input("input.txt")
-    print(numbers)
-    print(boards)
 
     scores = [board.play_game(numbers) for board in boards]
+
+    # Part 1
     print(find_winning_score(scores))
+
+    # Part 2
     print(find_losing_score(scores))
